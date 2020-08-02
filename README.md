@@ -9,6 +9,7 @@ TypeScript library to build web services, based on `express`, `koa` and `fastify
 - Performance similar to `fastify` by usage of similar libraries, and code for performance.
 - Support for `express` middleware.
 - Getting rid of support to templating engines.
+- I have no fuckin' motivation for this project
 
 ### Planned features
 
@@ -18,3 +19,7 @@ TypeScript library to build web services, based on `express`, `koa` and `fastify
 - [ ] Logging, integration of dedicated logger into application.
 - [ ] Complete support for `async/await` functions
 - [ ] TypeScript build-in
+
+### License
+
+Project use some parts of code contained in [`express`](), [`fastify`]() and [`koa`](), at general it's distributed on `GNU-3` License which is available at [`LICENSE.md`](./LICENSE.md)
