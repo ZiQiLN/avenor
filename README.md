@@ -1,4 +1,4 @@
-# Avenor
+![banner](./assets/banner.png)
 
 > Well... That's my first more serious project with potential change to be used by more than 10 people, I'm writing this for fun and I don't have much plans for that but in case of adaptation I'll maintain this package.
 
