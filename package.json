@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.1",
   "main": "index.js",
-  "repository": "https://github.com/ZiQiLN/aeroflow.git",
+  "repository": "https://github.com/ZiQiLN/avenor.git",
   "author": "Jakub Olan <jakub.olan001@gmail.com>",
   "license": "MIT",
   "devDependencies": {

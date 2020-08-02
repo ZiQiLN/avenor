@@ -1,11 +1,11 @@
 {
-  "name": "avenor",
-  "version": "0.0.1",
+  "name": "@avenor/router",
+  "version": "0.0.0",
   "description": "> TODO: description",
   "author": "Jakub Olan <jakub.olan001@gmail.com>",
   "homepage": "https://github.com/ZiQiLN/aeroflow#readme",
   "license": "ISC",
-  "main": "lib/core.js",
+  "main": "lib/router.js",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
@@ -22,8 +22,5 @@
   },
   "bugs": {
     "url": "https://github.com/ZiQiLN/aeroflow/issues"
-  },
-  "dependencies": {
-    "body-parser": "^1.19.0"
   }
 }
