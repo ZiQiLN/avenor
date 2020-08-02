@@ -1,0 +1,12 @@
+{
+  "name": "aeroflow",
+  "private": true,
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "https://github.com/ZiQiLN/aeroflow.git",
+  "author": "Jakub Olan <jakub.olan001@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "lerna": "^3.22.1"
+  }
+}
