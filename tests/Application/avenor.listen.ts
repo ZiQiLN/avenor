@@ -12,7 +12,7 @@ test('Application should listen on specifed port.', async (t) => {
 	const port = await getport({
 		port: 3600,
 	})
-	const srv = http.createServer(app)
+	const srv = http.createServer()
 	const prefix = await listen(srv)
 	const data = await got(prefix).json()
 	t.is(data, {

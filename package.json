@@ -5,8 +5,10 @@
 	"repository": "https://github.com/ZiQiLN/avenor.git",
 	"author": "Jakub Olan <jakub.olan001@gmail.com>",
 	"license": "MIT",
+	"main": "dist/lib/index.js",
 	"scripts": {
 		"test": "yarn test:coverage",
+		"build": "tsc",
 		"test:coverage": "nyc ava",
 		"docs:generate": "typedoc lib --theme ./node_modules/typedoc-neo-theme/bin/default"
 	},
