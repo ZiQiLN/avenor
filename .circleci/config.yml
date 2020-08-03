@@ -1,0 +1,34 @@
+version: 2.1
+orbs:
+   node: circleci/node@3.0.1
+jobs:
+   test:
+      docker:
+         - image: cimg/base:stable
+      working_directory: ~/avenor
+      steps:
+         - checkout
+         - node/install:
+              install-yarn: true
+              node-version: lts
+         - run: node --version
+         - run: yarn --version
+         - node/install-packages:
+              app-dir: ~/avenor
+              pkg-manager: yarn
+         - run: yarn test
+   deploy:
+      docker:
+         - image: cimg/base:stable
+      working_directory: ~/avenor
+      steps:
+         - checkout
+         - node/install:
+              install-yarn: true
+              node-version: lts
+         - run: node --version
+         - run: yarn --version
+         - node/install-packages:
+              app-dir: ~/avenor
+              pkg-manager: yarn
+         - run: yarn test
