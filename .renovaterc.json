@@ -1,4 +1,11 @@
 {
   "extends": ["config:base"],
-  "baseBranches": ["dev"]
+  "baseBranches": ["dev"],
+  "packageRules": [
+    {
+      "updateTypes": ["minor", "patch", "pin", "digest"],
+      "automerge": true
+    }
+  ],
+  "dependencyDashboard": true
 }
