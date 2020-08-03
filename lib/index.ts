@@ -1,1 +1,1 @@
-export { Application } from './application'
+export { Avenor } from './application'
