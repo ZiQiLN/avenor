@@ -1,0 +1,26 @@
+{
+  "name": "@avenor/express",
+  "version": "0.0.0",
+  "description": "Avenor package based on express engine.",
+  "author": "Jakub Olan <jakub.olan001@gmail.com>",
+  "homepage": "https://github.com/ZiQiLN/avenor#readme",
+  "license": "ISC",
+  "main": "lib/express.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZiQiLN/avenor.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/ZiQiLN/avenor/issues"
+  }
+}
