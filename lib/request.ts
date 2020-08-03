@@ -1,4 +1,3 @@
-import { URL, format as stringify } from "url";
-import net from "net";
-import qs from "querystring";
-import util from "util";
+import { IncomingMessage, ServerResponse, Server } from 'http'
+
+export class Request {}
