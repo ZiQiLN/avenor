@@ -10,9 +10,15 @@
     "docs:generate": "typedoc lib --theme ./node_modules/typedoc-neo-theme/bin/default"
   },
   "devDependencies": {
+    "@araclx/husky": "^0.0.8",
+    "@araclx/prettier-config": "^0.0.8",
+    "@araclx/semantic-release": "^0.1.5",
     "@ava/typescript": "1.1.1",
+    "@types/debug": "^4.1.5",
     "@types/node": "14.0.27",
     "ava": "3.11.1",
+    "husky": "^4.2.5",
+    "prettier": "^2.0.5",
     "typedoc": "0.17.8",
     "typedoc-neo-theme": "1.0.9",
     "typescript": "3.9.7"
