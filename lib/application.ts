@@ -7,8 +7,8 @@ import { ApplicationConfiguration } from './interfaces/application'
 // TODO(#8): Main application Class which should have all important methods that are described in https://github.com/ZiQiLN/avenor/issues/8
 
 export class Application extends EventEmitter {
-	public middleware: Array<Function>
-	public routers: Array<Function>
+	public middleware: any[]
+	public routers: any[]
 
 	/** Initialize a new application. */
 	constructor() {
