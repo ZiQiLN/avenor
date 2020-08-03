@@ -1,11 +1,14 @@
 {
 	"name": "avenor",
 	"private": false,
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"repository": "https://github.com/ZiQiLN/avenor.git",
 	"author": "Jakub Olan <jakub.olan001@gmail.com>",
 	"license": "MIT",
 	"main": "dist/lib/index.js",
+	"files": [
+		"dist"
+	],
 	"scripts": {
 		"test": "yarn test:coverage",
 		"build": "tsc",
