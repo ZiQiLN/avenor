@@ -1,0 +1,36 @@
+{
+	"name": "avenor",
+	"version": "0.0.4",
+	"description": "> TODO: description",
+	"author": "Jakub Olan <jakub.olan001@gmail.com>",
+	"homepage": "https://github.com/ZiQiLN/avenor#readme",
+	"license": "ISC",
+	"main": "lib/avenor.js",
+	"directories": {
+		"lib": "lib",
+		"test": "__tests__"
+	},
+	"files": [
+		"lib"
+	],
+	"dependencies": {
+		"get-port": "^5.1.1",
+		"got": "^11.5.1",
+		"test-listen": "^1.1.0",
+		"debug": "^4.1.1",
+		"lodash": "^4.17.19",
+		"morgan": "^1.10.0",
+		"signale": "^1.4.0",
+		"spdy": "^4.0.2"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ZiQiLN/avenor.git"
+	},
+	"scripts": {
+		"test": "echo \"Error: run tests from root\" && exit 1"
+	},
+	"bugs": {
+		"url": "https://github.com/ZiQiLN/avenor/issues"
+	}
+}
