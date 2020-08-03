@@ -1,2 +1,1 @@
-/** says hello */
-export function hello() {}
+export { Application } from './application'
