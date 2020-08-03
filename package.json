@@ -1,32 +1,60 @@
 {
-  "name": "avenor",
-  "private": true,
-  "version": "0.0.1",
-  "repository": "https://github.com/ZiQiLN/avenor.git",
-  "author": "Jakub Olan <jakub.olan001@gmail.com>",
-  "license": "MIT",
-  "scripts": {
-    "test": "ava",
-    "docs:generate": "typedoc lib --theme ./node_modules/typedoc-neo-theme/bin/default"
-  },
-  "devDependencies": {
-    "@ava/typescript": "1.1.1",
-    "@types/node": "14.0.27",
-    "ava": "3.11.1",
-    "typedoc": "0.17.8",
-    "typedoc-neo-theme": "1.0.9",
-    "typescript": "3.9.7"
-  },
-  "dependencies": {},
-  "ava": {
-    "typescript": {
-      "extensions": [
-        "ts",
-        "tsx"
-      ],
-      "rewritePaths": {
-        "src/": "build/"
-      }
-    }
-  }
+	"name": "avenor",
+	"private": false,
+	"version": "0.0.3",
+	"repository": "https://github.com/ZiQiLN/avenor.git",
+	"author": "Jakub Olan <jakub.olan001@gmail.com>",
+	"license": "MIT",
+	"main": "dist/lib/index.js",
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"test": "yarn test:coverage",
+		"build": "tsc",
+		"test:coverage": "nyc ava",
+		"docs:generate": "typedoc lib --theme ./node_modules/typedoc-neo-theme/bin/default"
+	},
+	"devDependencies": {
+		"@araclx/husky": "^0.0.8",
+		"@araclx/prettier-config": "^0.0.8",
+		"@araclx/semantic-release": "^0.1.5",
+		"@araclx/tsconfig": "^0.0.8",
+		"@ava/typescript": "1.1.1",
+		"@types/debug": "^4.1.5",
+		"@types/lodash": "^4.14.158",
+		"@types/morgan": "^1.9.1",
+		"@types/node": "14.0.27",
+		"@types/signale": "^1.4.1",
+		"@types/spdy": "^3.4.4",
+		"@types/test-listen": "^1.1.0",
+		"ava": "3.11.1",
+		"eslint-plugin-prettier": "^3.1.4",
+		"get-port": "^5.1.1",
+		"got": "^11.5.1",
+		"husky": "^4.2.5",
+		"lerna": "^3.22.1",
+		"nyc": "^15.1.0",
+		"prettier": "^2.0.5",
+		"test-listen": "^1.1.0",
+		"ts-node": "^8.10.2",
+		"typedoc": "0.17.8",
+		"typedoc-neo-theme": "1.0.9",
+		"typescript": "3.9.7"
+	},
+	"dependencies": {
+		"debug": "^4.1.1",
+		"lodash": "^4.17.19",
+		"morgan": "^1.10.0",
+		"signale": "^1.4.0",
+		"spdy": "^4.0.2"
+	},
+	"ava": {
+		"extensions": [
+			"ts"
+		],
+		"require": [
+			"ts-node/register"
+		]
+	}
 }
