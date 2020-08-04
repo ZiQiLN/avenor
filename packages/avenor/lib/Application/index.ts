@@ -15,6 +15,10 @@ import debug from 'debug'
 // https://github.com/zhmushan/abc/
 // https://github.com/l2ig/aqua
 // https://github.com/fastrodev/fastro
+//
+// Behind Deno-based projects there are few potential JavaScript libraries that "can do the work" butt I want to avoid taking parts for these libs, actually I think using parts of other deno libraries can be good idea.
+// https://github.com/senchalabs/connect/
+// https://github.com/nestjs/nest/tree/master/packages/core
 
 debug('avenor:constructor')
 
