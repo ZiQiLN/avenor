@@ -1,1 +1,0 @@
-export { Avenor } from './application'

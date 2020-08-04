@@ -14,14 +14,14 @@
 		"lib"
 	],
 	"dependencies": {
+		"debug": "^4.1.1",
 		"get-port": "^5.1.1",
 		"got": "^11.5.1",
-		"test-listen": "^1.1.0",
-		"debug": "^4.1.1",
 		"lodash": "^4.17.19",
 		"morgan": "^1.10.0",
 		"signale": "^1.4.0",
-		"spdy": "^4.0.2"
+		"spdy": "^4.0.2",
+		"test-listen": "^1.1.0"
 	},
 	"repository": {
 		"type": "git",
@@ -32,5 +32,9 @@
 	},
 	"bugs": {
 		"url": "https://github.com/ZiQiLN/avenor/issues"
+	},
+	"devDependencies": {
+		"@types/debug": "^4.1.5",
+		"@types/lodash": "^4.14.158"
 	}
 }

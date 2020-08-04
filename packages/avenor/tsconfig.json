@@ -13,12 +13,18 @@
 		"strict": true,
 		"noImplicitReturns": true,
 		"noUnusedLocals": false,
-    "noImplicitAny": false,
+		"noImplicitAny": false,
 		"noUnusedParameters": false,
 		"noFallthroughCasesInSwitch": false,
 		"noEmitOnError": false,
 		"forceConsistentCasingInFileNames": true,
 		"skipLibCheck": true,
-		"esModuleInterop": true
+		"esModuleInterop": true,
+		"baseUrl": "./lib",
+		"paths": {
+			"@request/*": ["Request/*"],
+			"@response/*": ["Response/*"],
+			"@context/*": ["Context/*"]
+		}
 	}
 }
