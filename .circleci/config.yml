@@ -7,9 +7,11 @@ executors:
    macos:
       macos:
          xcode: 11.4
+   windows: win/default
 
 orbs:
    node: circleci/node@3.0.1
+   win: circleci/windows@2.3.0
 
 jobs:
    test:
@@ -36,5 +38,5 @@ workflows:
          - test:
               matrix:
                  parameters:
-                    os: [linux, macos]
-                    node-version: ['10.9.0', '11.9.0', '12.9.1', '13.9.0']
+                    os: [linux, macos, windows]
+                    node-version: ['lts']
