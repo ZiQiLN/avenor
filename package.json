@@ -6,7 +6,7 @@
 	"author": "Jakub Olan <jakub.olan001@gmail.com>",
 	"license": "MIT",
 	"scripts": {
-		"test": "yarn test:coverage",
+		"test": "lerna run test",
 		"build": "tsc",
 		"test:coverage": "nyc ava",
 		"docs:generate": "typedoc lib --theme ./node_modules/typedoc-neo-theme/bin/default"
