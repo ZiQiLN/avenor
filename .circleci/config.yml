@@ -1,19 +1,42 @@
 version: 2.1
+
+executors:
+   linux:
+      docker:
+         - image: cimg/base:2020.01
+   macos:
+      macos:
+         xcode: 11.4
+   windows: win/default
+
 orbs:
    node: circleci/node@3.0.1
+   win: circleci/windows@2.3.0
+
 jobs:
-   build:
-      docker:
-         - image: cimg/base:stable
+   test:
+      parameters:
+         os:
+            type: executor
+         node-version:
+            type: string
+      executor: << parameters.os >>
       working_directory: ~/avenor
       steps:
          - checkout
          - node/install:
+              node-version: << parameters.node-version >>
               install-yarn: true
-              node-version: lts
-         - run: node --version
-         - run: yarn --version
          - node/install-packages:
               app-dir: ~/avenor
               pkg-manager: yarn
          - run: yarn test
+
+workflows:
+   tests:
+      jobs:
+         - test:
+              matrix:
+                 parameters:
+                    os: [linux, macos, windows]
+                    node-version: ['lts']
