@@ -10,7 +10,7 @@ executors:
    windows: win/default
 
 orbs:
-   node: circleci/node@3.0.1
+   node: circleci/node@4.0.0
    win: circleci/windows@2.3.0
 
 jobs:
